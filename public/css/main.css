@@ -1,0 +1,1244 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    background-color: whitesmoke;
+    font-family: "Century Gothic";
+}
+
+* {
+    font-family: "Century Gothic";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    border-color: #fff;
+    background-color: red;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-width: 1px 1px 1px 2px;
+    border-color: darkred;
+    background-color: #777;
+}
+
+::-webkit-scrollbar-track {
+    border-width: 0;
+}
+
+::-webkit-scrollbar-track:hover {
+    border-left: solid 1px darkred;
+    background-color: darkred;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(140deg, #7A7782, black, #7A7782);
+    box-shadow: 0 4px 5px grey;
+
+}
+
+.top-zindex {
+    z-index: 999;
+}
+
+.main-menu {
+    margin: 0;
+}
+
+.main-menu li {
+    /*display: inline-block;*/
+    float: left;
+    /*padding: 0.5%;*/
+    list-style-type: none;
+    margin: 0;
+    height: 64px;
+    width: 15%;
+    padding: 1.7%;
+}
+
+.main-menu li a:hover {
+    color: red;
+}
+
+.main-menu li a {
+
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 0 2px 2px black;
+    font-family: "Century Gothic";
+}
+
+.users-font-icon {
+    /*color: whitesmoke;*/
+    text-decoration: none;
+    text-shadow: 0 2px 2px black;
+    /*font-family: "Century Gothic";*/
+    color: whitesmoke;
+    margin-right: 4%;
+    cursor: pointer;
+
+}
+
+.users-font-icon:hover {
+    color: red;
+}
+
+.users-search {
+    font-size: 2.5em !important;
+    width: 4% !important;
+    float: right !important;
+    padding: 0.6% !important;
+    margin-right: 2% !important;
+}
+
+.users-search a i:hover {
+    color: red;
+}
+
+#serach {
+    position: fixed;
+    top: 12%;
+    right: 3%;
+    width: 50%;
+    height: 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(10deg, red, #A60400, red, #A60400);
+    box-shadow: 0 3px 5px grey;
+    font-family: "Century Gothic";
+}
+
+#serach:after {
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -20px;
+    right: 29%;
+}
+
+.site-search {
+    position: absolute;
+    right: 10%;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    /*background: black;*/
+}
+
+.span-search {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    color: white;
+    font-size: 1.4em;
+}
+
+.span-serach-icon {
+    position: absolute;
+    right: 1%;
+    top: 11.5%;
+    font-size: 2.5em;
+    color: whitesmoke;
+    text-shadow: 0 2px 2px black;
+    cursor: pointer;
+}
+
+.span-serach-icon:hover {
+    color: darkgrey;
+}
+
+.serach-text {
+    font-size: 1.3em;
+    width: 99%;
+    height: 88%;
+    padding-left: 1%;
+}
+
+.serach-text:focus {
+    outline-color: darkred;
+}
+
+#log-in {
+    position: fixed;
+    top: 18%;
+    left: 25%;
+    width: 50%;
+    height: 70%;
+    background: whitesmoke;
+    z-index: 2;
+}
+
+.log-in-head-menu {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 15%;
+    border-bottom: 1px solid darkgrey;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.i-have-acc {
+    width: 50%;
+    float: left;
+    height: 100%;
+    /*border-right: 1px solid darkgrey;*/
+    /*outline: 1px solid black;*/
+    cursor: pointer;
+    text-shadow: 0 0 2px black;
+    color: red;
+}
+
+.i-have-acc:hover, .i-not-have-acc:hover {
+    color: red;
+}
+
+.i-not-have-acc {
+    float: right;
+    width: 50%;
+    height: 100%;
+    /*outline: 1px solid black;*/
+    cursor: pointer;
+    text-shadow: 0 0 2px black;
+}
+
+.span-i-have {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: "Century Gothic";
+    padding-top: 6%;
+}
+
+.span-i-not-have {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: "Century Gothic";
+    padding-top: 6%;
+}
+
+#log-in-enter-data {
+    width: 100%;
+    height: 85%;
+}
+
+.enter-login {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 8%;
+    height: 10%;
+    font-size: 1.5em;
+    padding-left: 2%;
+    font-family: "Century Gothic";
+    box-shadow: 0 4px 5px black;
+    /*border-radius: 10px;*/
+}
+
+.enter-pass {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2%;
+    height: 10%;
+    font-size: 1.5em;
+    padding-left: 2%;
+    font-family: "Century Gothic";
+    box-shadow: 0 4px 5px black;
+    /*border-radius: 10px;*/
+}
+
+.form-enter:focus {
+    outline-color: red;
+}
+
+.button-log-in {
+    border-radius: 10px;
+    width: 63%;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-top: 5%;
+    height: 10%;
+    font-size: 1.5em;
+    padding-left: 2%;
+    font-family: "Century Gothic";
+    background: linear-gradient(70deg, red, darkred, red);
+    color: white;
+    box-shadow: 0 4px 5px black;
+}
+
+.button-log-in:focus {
+    outline: none;
+}
+
+#reg-enter-data {
+    width: 100%;
+    height: 85%;
+}
+
+.form-enter-reg {
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 10%;
+    font-size: 1.5em;
+    padding-left: 2%;
+    font-family: "Century Gothic";
+    box-shadow: 0 4px 5px black;
+}
+
+.form-enter-reg:focus {
+    outline-color: red;
+}
+
+#main_content {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+#main_cart {
+    position: fixed;
+    width: 20%;
+    height: 50%;
+    right: 1%;
+    top: 12%;
+    border: 4px solid black;
+    border-radius: 20px;
+    background: linear-gradient(12deg, #7A7782, black);
+    box-shadow: 0 8px 5px black;
+}
+
+#main_cart:after {
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -20px;
+    right: 45%;
+}
+
+.count_items {
+    display: block;
+    margin-top: 8%;
+    margin-left: 3%;
+    width: 94%;
+    height: 10%;
+    font-family: "Century Gothic";
+    font-size: 1.4em;
+    text-align: center;
+    color: whitesmoke;;
+}
+
+.count_price {
+    display: block;
+    margin-top: 8%;
+    margin-left: 3%;
+    width: 94%;
+    height: 10%;
+    font-family: "Century Gothic";
+    font-size: 1.4em;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.go_to_cart {
+    border-radius: 10px;
+    width: 95%;
+    cursor: pointer;
+    margin-left: 2.5%;
+    margin-top: 9%;
+    height: 15%;
+    font-size: 1.5em;
+    padding-left: 2%;
+    font-family: "Century Gothic";
+    background: linear-gradient(70deg, red, darkred, red);
+    color: white;
+    box-shadow: 0 4px 5px black;
+
+}
+
+.break {
+    width: 100%;
+    height: 10vh;
+}
+
+#main_categors {
+    margin-top: 2%;
+    width: 20%;
+    margin-left: 2%;
+    /*height: 60vh;*/
+    height: auto;
+    /*background: white;*/
+    background-image: url('../../public/img/other/head_events.jpg');
+    background-size: cover;
+    color: whitesmoke;
+    outline: 1px solid #EBE5FF;
+    margin-bottom: 2%;
+    float: left;
+    box-shadow: -3px 3px 5px black;
+    text-shadow: 0 1px 2px black;
+}
+
+.head-categor {
+    display: block;
+
+    width: 100%;
+    text-align: center;
+    font-family: "Century Gothic";
+}
+
+#main_categors ul.ul_categors li {
+    font-family: "Century Gothic";
+    list-style-type: none;
+    padding-left: 10%;
+    padding-top: 5%;
+    cursor: pointer;
+}
+
+#main_categors ul.ul_categors li:hover {
+    background-image: url('../../public/img/other/head_events.jpg');
+    color: whitesmoke;
+    outline: 1px solid whitesmoke;
+}
+
+#main_categors ul.ul_categors {
+    margin: 0;
+    padding-left: 0;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#main_categors ul.ul_accessuars li {
+    font-family: "Century Gothic";
+    list-style-type: none;
+    padding-left: 10%;
+    padding-top: 5%;
+    cursor: pointer;
+}
+
+#main_categors ul.ul_accessuars li:hover {
+    background-image: url('../../public/img/other/head_events.jpg');
+    color: whitesmoke;
+    outline: 1px solid whitesmoke;
+}
+
+#main_categors ul.ul_accessuars {
+    margin: 0;
+    padding-left: 0;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
+}
+
+#all_items {
+    float: right;
+    width: 74%;
+    height: 160vh;
+    background: whitesmoke;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+#main_filters {
+    width: 20%;
+    margin-left: 2%;
+    /*height: 60vh;*/
+    height: auto;
+    /*background: white;*/
+    background-image: url('../../public/img/other/head_events.jpg');
+    background-size: cover;
+    outline: 1px solid #EBE5FF;
+    margin-bottom: 2%;
+    float: left;
+    box-shadow: -3px 3px 5px black;
+    text-shadow: 0 1px 2px black;
+    color: whitesmoke;
+}
+
+.filter_price {
+    width: 100%;
+    display: block;
+    height: auto;
+
+}
+
+.span_filter_cena {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Century Gothic";
+    margin-top: 2%;
+}
+
+#amount, #amount2 {
+    display: inline-block;
+    /*margin-left: 5%;*/
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    color: black !important;
+    background: none;
+}
+
+#slider-range, #slider-range2 {
+    width: 80%;
+    margin-left: 9%;
+    box-shadow: -2px 1px 3px black;
+    /*height: 3%;*/
+}
+
+.ui-slider-handle.ui-corner-all.ui-state-default {
+    background: black;
+    cursor: pointer;
+}
+
+.ui-slider-handle.ui-corner-all.ui-state-default:focus {
+    outline-color: black;
+}
+
+.ui-slider-range.ui-corner-all.ui-widget-header {
+    background: linear-gradient(50deg, darkred, red, darkred);
+}
+
+.filter_ppl {
+    width: 100%;
+    display: block;
+    margin-top: 16%;
+}
+
+.select-filter_ppl {
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    margin-top: 6%;
+    padding: 3%;
+    font-family: "Century Gothic";
+}
+
+.select-filter_ppl option:hover {
+    background: black;
+}
+
+.select-filter_ppl > option:hover {
+    background: darkgrey !important;
+    color: whitesmoke !important;
+}
+
+.select-filter_ppl:focus {
+    outline-color: red;
+}
+
+.filter_age {
+    display: block;
+    width: 100%;
+    margin-top: 16%;
+}
+
+.access_filters {
+    border-radius: 10px;
+    width: 95%;
+    cursor: pointer;
+    margin-left: 2.5%;
+    margin-top: 15%;
+    height: 15%;
+    font-size: 1em;
+    /*padding-left: 2%;*/
+    padding: 2%;
+    font-family: "Century Gothic";
+    background: linear-gradient(70deg, red, darkred, red);
+    color: white;
+    box-shadow: 0 4px 5px black;
+    margin-bottom: 10%;
+}
+
+.one_item {
+    position: relative;
+    /*display: inline-block;*/
+    float: left;
+    width: 25%;
+    height: 35%;
+    background: white;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 5%;
+    outline: 1px solid #EBE5FF;
+    box-shadow: -5px 7px 3px grey;
+}
+
+.item_avatar {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-top: 1%;
+    height: 65%;
+    /*height: auto;*/
+    overflow: hidden;
+    /*background: black;*/
+}
+
+.img_avatar {
+    width: 100%;
+    height: auto;
+}
+
+.items_name {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Century Gothic";
+    margin-top: 4%;
+    font-size: 1.3em;
+    /*text-shadow: -3px 1px 2px grey;*/
+}
+
+.items_price {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Century Gothic";
+    margin-top: 4%;
+    font-size: 1.6em;
+    /*text-shadow: -3px 1px 2px grey;*/
+}
+
+.popup_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: darkred;
+    opacity: 0.7;
+    cursor: pointer;
+    box-shadow: inset 0 0 85px black;
+    text-align: center;
+}
+
+.popup_desc {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*padding-left: 15%;*/
+    /*padding-right: 25%;*/
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 3;
+    color: white;
+    text-shadow: -4px 2px 8px black;
+}
+
+.popup_ppl {
+    position: absolute;
+    z-index: 4;
+    width: auto;
+    height: 60px;
+    /*max-height: 60px;*/
+    /*min-height: 60px;*/
+    /*border: 2px solid white;*/
+    /*box-shadow: 0 3px 5px black;*/
+    top: 4%;
+    left: 5%;
+    max-width: 52%;
+    cursor: pointer;
+}
+
+.circle_age {
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    /*margin-left: 5%;*/
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 2px solid white;
+    z-index: 3;
+    box-shadow: 0 3px 5px black;
+    cursor: pointer;
+}
+
+.popup_age {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 22%;
+    font-size: 1.3em;
+    color: white;
+    text-shadow: -4px 2px 8px black;
+}
+
+.rating_stars {
+    position: absolute;
+    /*background: green;*/
+    top: 50%;
+    width: 100%;
+    height: 10%;
+    z-index: 4;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    text-shadow: -4px 2px 8px black;
+}
+
+.dib_but {
+    position: absolute;
+    bottom: 2%;
+    left: 4%;
+    width: 92%;
+    height: 13%;
+    background: black;
+    z-index: 4;
+    cursor: pointer;
+    outline: 2px solid black;
+    background: dimgrey;
+    box-shadow: inset 0 0 100px black;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    font-family: "Century Gothic";
+}
+
+.dib_but2 {
+    position: absolute;
+    bottom: 19%;
+    left: 4%;
+    width: 92%;
+    height: 13%;
+    /*background: black;*/
+    z-index: 4;
+    cursor: pointer;
+    outline: 2px solid black;
+    background: dimgrey;
+    box-shadow: inset 0 0 100px black;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    font-family: "Century Gothic";
+
+}
+
+.dib_but2 > a {
+    color: white;
+}
+
+.dib_but2:hover, .dib_but:hover {
+    outline-color: white;
+}
+
+.dib_but2 span, .dib_but span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    text-shadow: -4px 2px 8px black;
+}
+
+.head_events {
+    margin-top: 3em;
+    height: 6em;
+    /*background: whitesmoke;*/
+    /*box-shadow: 0 0 1px grey;*/
+    margin-left: 1%;
+    width: 98%;
+    box-shadow: -2px 3px 5px black;
+    background-image: url('../../public/img/other/head_events.jpg');
+    background-size: cover;
+}
+
+.select_categors {
+    float: left;
+    margin-left: 2%;
+    margin-top: 27px;
+    /*height: 3.3em;*/
+    width: 20%;
+    font-size: 1.3em;
+    padding: 6px;
+}
+
+.select_categors:focus {
+    outline: 1px solid red;
+}
+
+.search_events {
+    margin-top: 27px;
+    float: left;
+    /*height: 2.8em;*/
+    /*padding: 0;*/
+    margin-left: 5%;
+    width: 46%;
+    font-size: 1.3em;
+    padding: 6px;
+}
+
+.search_events:focus {
+    outline: 1px solid red;
+}
+
+.create_event {
+    float: left;
+    margin-left: 5%;
+    width: 18%;
+    font-size: 1.3em;
+    padding: 6px;
+    margin-top: 27px;
+    background: linear-gradient(70deg, red, darkred, red);
+    color: white;
+    box-shadow: 0 4px 5px black;
+    cursor: pointer;
+}
+
+.create_event:focus {
+    outline: none;
+}
+
+.all_events {
+    margin-left: 1%;
+    width: 98%;
+    height: auto;
+    margin-top: 3%;
+    background: whitesmoke;
+
+}
+
+.one_event {
+    position: relative;
+    height: 9em;
+    background: whitesmoke;
+    box-shadow: -2px 3px 5px black;
+    margin-bottom: 1em;
+    outline: 1px solid darkgrey;
+}
+
+.avatar_event {
+    width: 9em;
+    height: 100%;
+    float: left;
+    background: black;
+}
+
+.img_avatar_event {
+    width: 100%;
+    height: auto;
+}
+
+.one_event_info {
+    float: left;
+    width: 20%;
+    height: 100%;
+    /*background: red;*/
+    /*margin-left: 1%;*/
+    text-align: center;
+    display: table;
+
+}
+
+.one_event_info > span.name_events {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+.genre_events {
+    color: darkgrey;
+    font-size: 0.5em;
+}
+
+.comment_by_author_event {
+    float: left;
+    width: 26%;
+    height: 100%;
+    /*background: red;*/
+}
+
+.comment_by_author_event > span.h_comment {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid red;
+}
+
+.comment_by_author_event > span.author_comment {
+    display: block;
+    padding: 5px;
+}
+
+.event_data {
+    float: left;
+    width: 15%;
+    height: 100%;
+    /*background: red;*/
+    margin-left: 2%;
+}
+
+.event_data > span.h_data {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid red;
+}
+
+.event_data > span.author_data {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px dashed darkgrey;
+}
+
+.event_data > span.author_place {
+    display: block;
+    padding: 5px;
+}
+
+.enter_to_event {
+    float: left;
+    height: 100%;
+    width: 23%;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.enter_to_event > a > span.author_event {
+    display: block;
+    margin-top: 5px;
+}
+
+.count_ppls_event {
+    display: block;
+    margin-top: 5px;
+}
+
+.button_enter_to_event {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    /*background: linear-gradient(70deg, red, darkred, red);*/
+    background-image: url('../../public/img/other/head_events.jpg');
+    background-size: cover;
+    color: white;
+    box-shadow: 0 4px 5px black;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 6px;
+}
+
+.button_enter_to_event:focus {
+    outline: none;
+}
+
+.popup_users_modal {
+    display: none;
+    position: absolute;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    background: whitesmoke;
+    right: 0.2%;
+    top: 4.5em;
+    text-align: center;
+    outline: 1px solid black;
+}
+
+.popup_users_modal > span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid red;
+    padding: 5px;
+}
+
+.popup_users_modal > form > button {
+    background: linear-gradient(70deg, red, darkred, red);
+    color: white;
+    box-shadow: 0 4px 5px black;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 2%;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.popup_users_modal > a > button {
+    background: linear-gradient(70deg, red, darkred, red);
+    color: white;
+    box-shadow: 0 4px 5px black;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 2%;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.items_read_more {
+
+    /*background: red;*/
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 25px;
+    height: 30em;
+    /*background-image: url('../../public/img/other/head_events.jpg');*/
+    /*background-size: cover;*/
+    /*box-shadow: -2px 3px 5px black;*/
+
+}
+
+.avatar_items_route {
+    float: left;
+    margin-top: 2.5em;
+    margin-left: 2.5em;
+    width: 15em;
+    height: 15em;
+    background: black;
+}
+
+.img_avatar_items_route {
+    width: 100%;
+    height: auto;
+}
+
+.name_items_route {
+    float: left;
+    width: 73%;
+    height: 15em;
+    display: block;
+    padding: 0 10px;
+    /*background: whitesmoke;*/
+    margin-top: 2.5em;
+    margin-left: 2%;
+}
+
+.name_items_route > span.items_name_route {
+    font-size: 2.5em;
+    border-bottom: 1px solid red;
+    display: block;
+}
+
+.name_items_route > span.diapason_users_items {
+    font-size: 1.8em;
+    margin-top: 70px;
+    display: block;
+    float: left;
+    margin-right: 3%;
+}
+
+.time_of_the_game_items {
+    font-size: 1.8em;
+    margin-top: 70px;
+    display: block;
+    float: left;
+    margin-right: 3%;
+}
+
+.age_users_items {
+    display: block;
+    font-size: 1.8em;
+    margin-top: 70px;
+    float: left;
+    margin-right: 3%;
+}
+
+.price_items_route {
+    display: block;
+    font-size: 1.8em;
+    margin-top: 70px;
+    float: left;
+    margin-right: 3%;
+
+}
+
+.genre_items {
+    display: block;
+    font-size: 1.8em;
+    margin-top: 70px;
+    float: left;
+    margin-right: 3%;
+}
+
+.items_to_cart {
+    background: linear-gradient(70deg, red, darkred, red);
+    color: white;
+    box-shadow: 0 4px 5px black;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.7%;
+    margin-top: 10px;
+    margin-left: 2.5em;
+    width: 15em;
+    text-align: center;
+    float: left;
+}
+
+.items_desc {
+    float: left;
+    width: 73%;
+    height: 20em;
+    /*background: green;*/
+    margin-top: 10px;
+    margin-left: 2%;
+}
+
+.h_desc {
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    border-bottom: 1px solid red;
+}
+
+.items_desc_text {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+select.enter-reg-sex {
+    width: 43%;
+}
+
+.profile {
+    margin-top: 1em;
+    padding: 25px;
+}
+
+.user_avatar {
+    float: left;
+    height: auto;
+    width: 20%;
+    background: whitesmoke;
+    padding: 5px;
+    box-shadow: 3px 2px 5px black;
+}
+
+.img_user_avatar {
+    width: 100%;
+    height: auto;
+}
+
+.user_info {
+    float: left;
+    width: 70%;
+    height: 50vh;
+    margin-left: 5%;
+    background-image: url('../../public/img/other/head_events.jpg');
+    background-size: cover;
+    box-shadow: 2px 5px 5px black;
+    padding: 15px;
+}
+
+.input_user_info {
+    display: block;
+    margin-left: 2%;
+    width: 80%;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.top_user_div {
+    height: auto;
+    width: 100%;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.left_user_div {
+    position: relative;
+    float: left;
+    width: 35%;
+    height: 20em;
+    margin-top: 20px;
+}
+
+.mid_user_div {
+    float: left;
+    width: 35%;
+    height: 20em;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.right_user_div {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 20em;
+    margin-left: 5%;
+}
+
+.span_user_info {
+    display: block;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: whitesmoke;
+}
+
+.button_savedata {
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    background: linear-gradient(70deg, red, darkred, red);
+    color: white;
+    box-shadow: 0 4px 5px black;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.7%;
+    text-align: center;
+    width: 100%;
+}
+
+.collections {
+    height: 20em;
+    float: left;
+    margin-top: 25px;
+    width: 98%;
+    background: white;
+    box-shadow: 0 4px 5px black;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.head_in_my_collections {
+    display: block;
+    border-bottom: 2px solid red;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.add_to_collections {
+    color: darkred;
+    cursor: pointer;
+}
+
+.add_to_collections:hover {
+    color: red;
+}
+
+.desc_button_collections {
+    font-size: 0.3em;
+    color: darkgray;
+}
